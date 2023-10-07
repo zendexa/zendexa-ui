@@ -1,0 +1,102 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+//		"@johncision/eslint-config/module",
+		"prettier",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["prettier", "@typescript-eslint"],
+	"rules": {
+//		"import/max-dependencies": ["error", {
+//			"max": 100,
+//			"ignoreTypeImports": false
+//		}],
+//		"semi": ["error", "never"],
+		"prettier/prettier": [
+			"error",
+			{
+				"bracketSpacing": true,
+				"embeddedLanguageFormatting": "auto",
+				"htmlWhitespaceSensitivity": "css",
+				"insertPragma": false,
+				"printWidth": 100,
+				"proseWrap": "preserve",
+				"quoteProps": "as-needed",
+				"endOfLine": "auto",
+				"requirePragma": false,
+				"semi": false,
+				"singleQuote": true,
+				"trailingComma": "none",
+				"useTabs": true,
+				"overrides": [
+					{
+						"files": "*.css",
+						"options": {
+							"singleQuote": false
+						}
+					}
+				],
+
+				"tabWidth": 2,
+				"jsxSingleQuote": true
+			}
+		],
+
+//		"sort-imports": ["error", {
+//			"memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+//			"allowSeparatedGroups": true
+//		}],
+
+		"import/no-unresolved": "off",
+		"import/exports-last": "off",
+		"import/group-exports": "off",
+
+//		"spellcheck/spell-checker": [
+//			"error",
+//			{
+//				"minLength": 4,
+//				"skipWords": [
+//					"checkbox",
+//					"checkmark",
+//					"dismissible",
+//					"dropdown",
+//					"facebook",
+//					"fullcolor",
+//					"instagram",
+//					"linkedin",
+//					"loupe",
+//					"newsfeed",
+//					"reddit",
+//					"snackbar",
+//					"textarea",
+//					"unarchive",
+//					"youtube",
+//					"keydown",
+//					"keyup",
+//					"readonly",
+//					"maxlength",
+//					"passthough",
+//					"threshold",
+//					"rollup"
+//				]
+//			}
+//		],
+		"class-methods-use-this": "warn",
+		"immutable/no-mutation": "off",
+		"immutable/no-this": "off",
+		"fp/no-mutating-methods": "off",
+		"fp/no-mutation": "off",
+		"fp/no-nil": "off",
+		"fp/no-unused-expression": "off",
+		"fp/no-rest-parameters": "off"
+	}
+}

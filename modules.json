@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"paths": {
+			"@zendex/component-first-name": ["component/first-name/src/index.ts"],
+			"@zendex/component-last-name": ["component/last-name/src/index.ts"],
+			"@zendexa/common-create-context": ["common/create-context/src/index.ts"]
+		}
+	}
+}

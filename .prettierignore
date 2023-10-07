@@ -1,0 +1,13 @@
+tsconfig.json
+jest.config.ts
+.eslintrc.json
+
+/cypress
+/tests
+/dist
+/coverage
+
+/.trunk
+/.husky
+/.github
+/.rollup.cache

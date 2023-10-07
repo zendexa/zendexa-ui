@@ -1,0 +1,67 @@
+{
+  "compileOnSave": false,
+  "extends": "./modules.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "alwaysStrict": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    //		"isolatedModules": false,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "strictNullChecks": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "diagnostics": true,
+    "pretty": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./dist/types",
+    "incremental": false,
+    "types": [
+      "node",
+      "jest",
+      "@testing-library/jest-dom",
+      "@types/testing-library__jest-dom"
+    ]
+  },
+  "include": [
+    "types",
+    "src",
+    "test",
+    "index.ts",
+    "component",
+    "packages",
+  ],
+  "exclude": [
+    "node_modules",
+    "tmp",
+    "loaders",
+    "dist",
+    "assets",
+    "**/stories/*",
+    "**/test/*"
+  ]
+}
